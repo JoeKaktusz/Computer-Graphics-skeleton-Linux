@@ -6,12 +6,15 @@ The purpose of this repository is to help students to setup a development enviro
 - This repository and the Computer Graphics course use OpenGL 4.6 since 2025/1 semester, so please check if your gpu is compatible with OpenGL 4.6 (It supposed to be compatible with OpenGL 3.3).
 - You can check if your GPU support OpenGL 3.3 on these links: [Intel GPUs](https://www.intel.com/content/www/us/en/support/articles/000005524/graphics.html#primary-content), [Nvidia GPUs](https://en.wikipedia.org/wiki/List_of_Nvidia_graphics_processing_units), [AMD GPUs](https://en.wikipedia.org/wiki/List_of_AMD_graphics_processing_units).
 - Make sure that you have the latest drivers for your GPU otherwise OpenGL 3.3 to 4.6 might not be supported. You can check which version of OpenGL supported on your machine with the following command:
- 
-> glxinfo | grep 'OpenGL version'
 
+```bash 
+$ glxinfo | grep 'OpenGL version'
+```
 - It may require to install the **mesa-utils** package, which can be installed with the following command:
 
-> sudo apt install mesa-utils
+```bash 
+$ sudo apt install mesa-utils
+```
 
 ## Requirements:
 
@@ -26,27 +29,39 @@ The purpose of this repository is to help students to setup a development enviro
 
 Install build-essential for C++ development
 
->sudo apt install build-essential
+```bash 
+$ sudo apt install build-essential
+```
 
 Install CMake
 
-> sudo apt install cmake 
+```bash 
+$ sudo apt install cmake 
+```
 
 Install Mesa utilities for OpenGL development (includes OpenGL headers)
 
-> sudo apt install mesa-common-dev libgl1-mesa-dev
+```bash 
+$ sudo apt install mesa-common-dev libgl1-mesa-dev
+```
 
 Install Wayland development libraries
 
-> sudo apt install libwayland-dev
+```bash 
+$ sudo apt install libwayland-dev
+```
 
 Install Xorg development libraries (optional, for X11 support)
 
-> sudo apt install libx11-dev libxrandr-dev libxinerama-dev libxcursor-dev
+```bash 
+$ sudo apt install libx11-dev libxrandr-dev libxinerama-dev libxcursor-dev
+```
 
 Install GLFW for managing OpenGL context
 
-> sudo apt install libglfw3-dev
+```bash 
+$ sudo apt install libglfw3-dev
+```
 
 ## How to build:
 
@@ -54,38 +69,38 @@ Okay so you have it all installed. now you have to build the source code. We are
 
 0. Make a build directory in your project directory and switch there:
 
->
-> mkdir build && cd build
->
+```bash 
+$ mkdir build && cd build
+```
 
 1. Init CMake in the project:
 
->
-> cmake ..
->
+```bash 
+$ cmake ..
+```
 
 Make sure that CMakeLists.txt is in your project directory.
 Now we have an initialized project by CMake. 
 
-2. Build your project now:
+2. Build your project now with make:
 
->
-> make
->
+```bash 
+$ make
+```
 
 Done! Good job you built your first OpenGL application. 
 
 3. Now the you have to run your binary file:
 
->
-> ./openGLApp
->
+```bash 
+$ ./openGLApp
+```
 
 The name of the program will be how you name your project in CMakeLists.txt.
 
 ## Important:
 
-** You have to redo the building process everytime you add some new files to the project**
+** You have to redo the building with initialize CMake process everytime you add some new files to the project**
 
 ---
 
