@@ -1,11 +1,11 @@
 # Skeleton for homeworks at the Computer Graphics course at BME for Linux users
 
-The purpose of this repository is to help students to setup a development environment for those who don't want to use visual studio or not able to use for the Computer Graphics course at BME and for OpenGL 4.6. This tutorial was made for Linux users. Keep in mind that the commands were run on an Ubuntu desktop so if you use an other distro the commands may be different.
+The purpose of this repository is to help students to setup a development environment for those who don't want to use visual studio or not able to use for the Computer Graphics course at BME and for OpenGL 4.6. This tutorial was made for Linux users. Keep in mind that the commands were tested on an Ubuntu desktop so if you use an other distro the commands may be different.
 
 ## Disclaimers:
-- This repository and the Computer Graphics course use OpenGL 4.6 since 2025/1 semester, so please check if your gpu is compatible with OpenGL 4.6.
-- You can check if your GPU support OpenGL 4.6 on these links: [Intel GPUs](https://www.intel.com/content/www/us/en/support/articles/000005524/graphics.html#primary-content), [Nvidia GPUs](https://en.wikipedia.org/wiki/List_of_Nvidia_graphics_processing_units), [AMD GPUs](https://en.wikipedia.org/wiki/List_of_AMD_graphics_processing_units).
-- Make sure that you have the latest drivers for your GPU otherwise OpenGL 4.6 might not be supported. You can check which version of OpenGL supported on your machine with the following command:
+- This repository and the Computer Graphics course use OpenGL 4.6 since 2025/1 semester, so please check if your gpu is compatible with OpenGL 4.6 (It supposed to be compatible with OpenGL 3.3).
+- You can check if your GPU support OpenGL 3.3 on these links: [Intel GPUs](https://www.intel.com/content/www/us/en/support/articles/000005524/graphics.html#primary-content), [Nvidia GPUs](https://en.wikipedia.org/wiki/List_of_Nvidia_graphics_processing_units), [AMD GPUs](https://en.wikipedia.org/wiki/List_of_AMD_graphics_processing_units).
+- Make sure that you have the latest drivers for your GPU otherwise OpenGL 3.3 to 4.6 might not be supported. You can check which version of OpenGL supported on your machine with the following command:
  
 > glxinfo | grep 'OpenGL version'
 
@@ -78,7 +78,7 @@ Done! Good job you built your first OpenGL application.
 3. Now the you have to run your binary file:
 
 >
-> ./helloGL
+> ./openGLApp
 >
 
 The name of the program will be how you name your project in CMakeLists.txt.
