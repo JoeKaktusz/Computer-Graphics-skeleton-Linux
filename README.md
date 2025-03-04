@@ -67,7 +67,7 @@ $ sudo apt install libglfw3-dev
 
 Okay so you have it all installed. now you have to build the source code. We are going to use CMake for that purpose. 
 
-0. Make a build directory in your project directory and switch there:
+0. Make a build directory in your project directory (Where  the CMakeLists.txt is located) and switch there:
 
 ```bash 
 $ mkdir build && cd build
